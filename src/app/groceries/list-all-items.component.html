@@ -1,0 +1,6 @@
+<div *ngFor="let item of items"
+     class="card-panel"
+     (click)="item.inCart = !item.inCart"
+     [ngClass]="{'inCart': item.inCart}">
+  <span>{{ item.value }}</span>
+</div>

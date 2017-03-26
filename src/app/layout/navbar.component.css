@@ -1,0 +1,25 @@
+hr {
+  width: 50%;
+  margin: auto 0%;
+  transition-duration: .5s;
+}
+
+.col {
+  text-align: center;
+}
+
+.col:first-of-type.active ~ hr {
+  margin: auto 0%;
+}
+
+.col:last-of-type.active ~ hr {
+  margin: auto 50%;
+}
+
+.col:first-of-type:hover ~ hr {
+  margin: auto 0%;
+}
+
+.col:last-of-type:hover ~ hr {
+  margin: auto 50%;
+}
